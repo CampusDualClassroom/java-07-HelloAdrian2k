@@ -23,7 +23,7 @@ public class Exercise07 {
         for (int i = 1; i <= 10; i++) {
             numeros.add(i);
             if (numeros.get(i - 1) == num) {
-                mensaje = "El elemento " + num + " se encuentra en la posición: " + i;
+                mensaje = "El elemento " + num + " se encuentra en la posición: " + numeros.indexOf(i);
             }
         }
         System.out.println(mensaje);
