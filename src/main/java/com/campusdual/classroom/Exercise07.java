@@ -20,9 +20,9 @@ public class Exercise07 {
     public static void positionInAList(int num) {
         List<Integer> numeros = new ArrayList<>();
         String mensaje = "El elemento " + num + " no se encuentra en la lista.";
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             numeros.add(i);
-            if (numeros.get(i) == num) {
+            if (numeros.get(i - 1) == num) {
                 mensaje = "El elemento " + num + " se encuentra en la posición: " + i;
             }
         }
